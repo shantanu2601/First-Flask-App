@@ -1,7 +1,9 @@
 from nltk.tokenize import sent_tokenize
 def lines(a, b):
     """Return lines in both a and b"""
-    list_a=[],list_b=[],list_c=[]
+    list_a=[]
+    list_b=[]
+    list_c=[]
     line = ""
     for c in a:
         if c == '\n':
@@ -27,7 +29,9 @@ def lines(a, b):
 
 def sentences(a, b):
     """Return sentences in both a and b"""
-    list_a = [], list_b = [], list_d = []
+    list_a = []
+    list_b = []
+    list_d = []
     list_a = sent_tokenize(a)
     list_b = sent_tokenize(b)
     for c1 in list_a:
